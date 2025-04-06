@@ -7,7 +7,7 @@ import { Fade, Flex, Line, ToggleButton } from "@/once-ui/components";
 import styles from "@/components/Header.module.scss";
 
 import { routes, display } from "@/app/resources";
-import { person, home, about, work, gallery } from "@/app/resources/content";
+import { person, about, portfolio } from "@/app/resources/content";
 
 type TimeDisplayProps = {
   timeZone: string;
@@ -25,7 +25,7 @@ const TimeDisplay: React.FC<TimeDisplayProps> = ({ timeZone, locale = "en-GB" })
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit",
-        hour12: false,
+        hour12: true,
       };
       const timeString = new Intl.DateTimeFormat(locale, options).format(now);
       setCurrentTime(timeString);
@@ -71,10 +71,10 @@ export const Header = () => {
             horizontal="center"
           >
             <Flex gap="4" vertical="center" textVariant="body-default-s">
-              {routes["/"] && (
+              {/* {routes["/"] && (
                 <ToggleButton prefixIcon="home" href="/" selected={pathname === "/"} />
-              )}
-              <Line vert maxHeight="24" />
+              )} */}
+              {/* <Line vert maxHeight="24" /> */}
               {routes["/about"] && (
                 <>
                   <ToggleButton
@@ -92,20 +92,20 @@ export const Header = () => {
                   />
                 </>
               )}
-              {routes["/work"] && (
+              {routes["/portfolio"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
                     prefixIcon="grid"
-                    href="/work"
-                    label={work.label}
-                    selected={pathname.startsWith("/work")}
+                    href="/portfolio"
+                    label={portfolio.label}
+                    selected={pathname.startsWith("/portfolio")}
                   />
                   <ToggleButton
                     className="s-flex-show"
                     prefixIcon="grid"
-                    href="/work"
-                    selected={pathname.startsWith("/work")}
+                    href="/portfolio"
+                    selected={pathname.startsWith("/portfolio")}
                   />
                 </>
               )}
@@ -126,7 +126,7 @@ export const Header = () => {
                   />
                 </>
               )} */}
-              {routes["/gallery"] && (
+              {/* {routes["/gallery"] && (
                 <>
                   <ToggleButton
                     className="s-flex-hide"
@@ -142,7 +142,7 @@ export const Header = () => {
                     selected={pathname.startsWith("/gallery")}
                   />
                 </>
-              )}
+              )} */}
             </Flex>
           </Flex>
         </Flex>

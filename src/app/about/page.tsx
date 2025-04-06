@@ -52,9 +52,9 @@ export default function About() {
       items: [],
     },
     {
-      title: about.work.title,
-      display: about.work.display,
-      items: about.work.experiences.map((experience) => experience.company),
+      title: about.portfolio.title,
+      display: about.portfolio.display,
+      items: about.portfolio.experiences.map((experience) => experience.company),
     },
     {
       title: about.studies.title,
@@ -86,7 +86,7 @@ export default function About() {
               .map((item) => item.link),
             worksFor: {
               "@type": "Organization",
-              name: about.work.experiences[0].company || "",
+              name: about.portfolio.experiences[0].company || "",
             },
           }),
         }}
@@ -209,13 +209,13 @@ export default function About() {
             </Column>
           )}
 
-          {about.work.display && (
+          {about.portfolio.display && (
             <>
-              <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
-                {about.work.title}
+              <Heading as="h2" id={about.portfolio.title} variant="display-strong-s" marginBottom="m">
+                {about.portfolio.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
-                {about.work.experiences.map((experience, index) => (
+                {about.portfolio.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
                       <Text id={experience.company} variant="heading-strong-l">

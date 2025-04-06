@@ -90,7 +90,7 @@ const about = {
       </>
     ),
   },
-  work: {
+  portfolio: {
     display: true, // set to false to hide this section
     title: "Experiences",
     experiences: [
@@ -159,8 +159,8 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "CAD Design",
-        description: <>Skilled in CAD modeling with SolidWorks, creating precise and functional designs efficiently.</>,
+        title: "CAD Modeling",
+        description: <>Skilled in CAD modeling with SolidWorks and AutoCAD, creating precise and functional designs efficiently.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -179,7 +179,7 @@ const about = {
       },
       {
         title: "3D-Printing",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        description: <>Check out some of my 3D prints on my Portfolio tab :)</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -203,9 +203,9 @@ const about = {
 // };
 
 
-const work = {
+const portfolio = {
   label: "Portfolio",
-  title: "My projects",
+  title: "Portfolio",
   description: `Design and dev projects by ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
@@ -290,4 +290,4 @@ const work = {
 //   ],
 // };
 
-export { person, social, home, about, work };
+export { person, social, home, about, portfolio };

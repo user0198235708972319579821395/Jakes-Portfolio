@@ -7,8 +7,8 @@ export default async function sitemap() {
     lastModified: post.metadata.publishedAt,
   }));
 
-  const works = getPosts(["src", "app", "work", "projects"]).map((post) => ({
-    url: `https://${baseURL}/work/${post.slug}`,
+  const works = getPosts(["src", "app", "portfolio", "projects"]).map((post) => ({
+    url: `https://${baseURL}/portfolio/${post.slug}`,
     lastModified: post.metadata.publishedAt,
   }));
 
