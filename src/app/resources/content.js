@@ -26,11 +26,11 @@ const person = {
 const social = [
   // Links are automatically displayed.
   // Import new icons in /once-ui/icons.ts
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/Jake-Diehl",
-  },
+  // {
+  //   name: "GitHub",
+  //   icon: "github",
+  //   link: "https://github.com/Jake-Diehl",
+  // },
   {
     name: "LinkedIn",
     icon: "linkedin",
@@ -42,7 +42,7 @@ const social = [
   //   link: "",
   // },
   {
-    name: "Email",
+    name: "jdiehl@uwaterloo.ca",
     icon: "email",
     link: "mailto:jdiehl@uwaterloo.ca",
   },
@@ -110,7 +110,7 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/sigmatool.png",
             alt: "Once UI Project",
             width: 16,
             height: 9,
@@ -140,7 +140,15 @@ const about = {
           //   in overall company revenue.
           // </>,
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/UWFE.png",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -193,14 +201,6 @@ const about = {
     ],
   },
 };
-
-// const blog = {
-//   label: "Blog",
-//   title: "Writing about design and tech...",
-//   description: `Read what ${person.name} has been up to recently`,
-//   // Create new blog posts by adding a new .mdx file to app/blog/posts
-//   // All posts will be listed on the /blog route
-// };
 
 
 const portfolio = {

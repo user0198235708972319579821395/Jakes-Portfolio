@@ -1,10 +1,9 @@
 import { notFound } from "next/navigation";
 import { CustomMDX } from "@/components/mdx";
 import { getPosts } from "@/app/utils/utils";
-import { AvatarGroup, Button, Carousel, Column, Flex, Heading, Text } from "@/once-ui/components";
+import { Button, Carousel, Column, Flex, Heading } from "@/once-ui/components";
 import { baseURL } from "@/app/resources";
 import { person } from "@/app/resources/content";
-import { formatDate } from "@/app/utils/formatDate";
 import ScrollToHash from "@/components/ScrollToHash";
 
 interface portfolioParams {
