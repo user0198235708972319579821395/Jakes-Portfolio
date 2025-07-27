@@ -39,7 +39,7 @@ export async function generateMetadata() {
 }
 
 export default function Home() {
-  redirect("/about");
+  redirect("/portfolio");
 }
 
 // export default function Home() {

@@ -6,22 +6,11 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Mechatronics Engineer",
+  role: "Mechatronics Engineering Student",
   avatar: "/images/avatar.jpg",
   location: "America/Toronto", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: [], // optional: Leave the array empty if you don't want to display languages
 };
-
-// const newsletter = {
-//   display: true,
-//   title: <>Subscribe to {person.firstName}'s Newsletter</>,
-//   description: (
-//     <>
-//       I occasionally write about design, technology, and share thoughts on the intersection of
-//       creativity and engineering.
-//     </>
-//   ),
-// };
 
 const social = [
   // Links are automatically displayed.
@@ -34,7 +23,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/jakediehl-/",
+    link: "https://www.linkedin.com/in/jakediehl/",
   },
   // {
   //   name: "X",
@@ -91,13 +80,13 @@ const about = {
     ),
   },
   portfolio: {
-    display: true, // set to false to hide this section
+    display: false, // set to false to hide this section
     title: "Experiences",
     experiences: [
       {
         company: "Sigma Tool & Machine LTD.",
         timeframe: "Summer 2025",
-        role: "Machine Assembly Co-op Student",
+        role: "Machine Design & Assembly Co-op Student",
         achievements: [
           <>
             Incoming Summer 2025
