@@ -156,7 +156,6 @@ export const Header = () => {
             gap="8"
           >
             <Flex hide="s">{display.time && <TimeDisplay timeZone={person.location} />}</Flex>
-            {"EST"}
           </Flex>
         </Flex>
       </Flex>
